@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.move1 img
+{
+	transform: translate(900px,-1100px);
+}
+
+.move2 img
+{
+	   transform: translate(1000px,600px);
+}
+
+.move3 img
+{
+   transform: translate(-400px,800px);
+}
+
+
+.picbox 
+{
+	 transform: translate(-510px,-40px);
+}
+
+.textbox
+{
+	 transform: translate(900px, 40px);
+}
+

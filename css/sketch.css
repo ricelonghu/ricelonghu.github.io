@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html
+{
+	font-size:10px;
+	 scroll-behavior: smooth;
+}
+body
+{
+
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+	
+	margin: 0;
+	
+}
+.head
+{
+	width: 100%;
+	height: 65px;
+	z-index: 1000000;
+}
+
+
+.logo
+{
+
+	position: fixed;
+	width: 100%;
+	height: 65px;
+	background: #EFEFEF;
+	padding-bottom: 1%;
+	z-index: 1000;
+}
+
+.logo img
+{
+	position: relative;
+	width: 3%;
+	opacity: 0.4;
+	left: 50%;
+	top: 30%;
+}
+
+
+section
+{
+	position: relative;
+	width: 90%;
+	margin: auto;
+	-webkit-column-count: 5; /* Chrome, Safari, Opera */
+    -moz-column-count: 5; /* Firefox */
+    column-count: 5;
+    -webkit-column-gap: 5px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 5px; /* Firefox */
+    column-gap: 5px;
+}
+
+.picbox
+{
+	position: relative;
+	display: inline-block;
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.picbox img
+{
+	float: left;
+	width:100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+	cursor: pointer;
+	transition: 0.3s;
+	overflow: hidden;
+	
+	animation: ani_img 2s;
+	animation-duration: 1s;
+	animation-direction: normal;
+}
+
+@keyframes ani_img
+{
+	0%
+	{
+		
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+.picbox img:hover
+{
+	opacity: 0.5;
+	filter: grayscale(0%);
+}

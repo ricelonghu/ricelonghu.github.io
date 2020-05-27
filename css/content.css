@@ -1,0 +1,414 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html
+{
+	font-size:10px;
+	 scroll-behavior: smooth;
+}
+body
+{
+
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+	background: #FFFFFF;
+	margin: 0;
+	
+}
+
+/*header*/
+
+.direction
+{
+	position: fixed;
+	right:1%;
+	top:50%;
+	width: 50px;
+	height:100px;
+	z-index: 1000000;
+
+}
+
+
+/*section*/
+section
+{
+    margin-top: 0;
+    width: 100%;
+    position: relative;
+}
+
+/*BG wrapper*/
+
+.p1_container
+{
+	position: absolute;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+    z-index: -1;
+}
+
+
+.p2_container
+{
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 6%;
+	width: 88%;
+	box-sizing: border-box;
+	
+}
+
+.p3_container
+{
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+    z-index: 1000;
+}
+
+
+
+#p1
+{
+	margin-top: -5px;
+	width:100%;
+	
+}
+
+#p2
+{
+	width: 100%;
+}
+
+#p3
+{
+	width: 100%;	
+}
+
+
+/*.info*/
+
+#title
+{
+	
+	position: absolute;
+	width: 30%;
+	margin-top:  30%;
+	margin-right: 0;
+	z-index: 3;
+}
+
+/*title*/
+
+
+
+#title h3
+{
+	font-size: 160%;
+	text-align: right;
+	line-height: 10px;
+
+}
+
+#title h2
+{
+	font-size: 200%;
+	text-align: right;
+	line-height: 10px;
+}
+#title h1
+{
+	
+	font-size: 400%;
+	text-align: right;
+	line-height: 10px;
+}
+
+
+
+/*about*/
+
+.about
+{
+	width: 100%;
+	position: relative;
+	height: 850px;
+}
+
+.move_container
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+}
+
+.move1
+{
+	width:100%;
+	position: absolute;	
+}
+
+.move1 img
+{
+	width:40%;
+}
+
+.move2
+{
+	width:100%;
+	margin-top: 15%;
+	position: absolute;	
+}
+
+.move2 img
+{
+	width:65%;
+}
+
+.move3
+{
+	width:100%;
+	position: absolute;
+	margin-top: -13%;
+}
+
+.move3 img
+{
+	width:60%;
+}
+
+.about_text
+{
+	position: absolute;
+	width: 60%;
+	margin: auto;
+	margin-top: 10%;
+	z-index: 10000;
+	opacity: 0.8;
+	
+}
+
+.about_text h1
+{
+	
+	float: right;
+font-size: 800%;
+	line-height: 13rem;
+	margin-bottom:0;
+ writing-mode: vertical-lr; 
+}
+
+.about_text p
+{
+	
+	float: right;
+	margin-top: 20%;
+	font-size: 250%;
+}
+
+.about_text p br
+{
+}
+
+/*cv*/
+
+.cv
+{
+	width: 100%;
+	position: relative;
+	height: 850px;
+	background-color:#D9D9D9;
+	opacity: 0.8;
+}
+article
+{
+	width:100%;
+	height: 90%;
+	position: relative;
+	
+}
+
+.blank
+{
+	float: left;
+	width: 15%;
+	height: 100%;
+z-index: 100;
+	
+}
+
+.picbox
+{
+	float: left;
+	width: 20%;
+	height:  100%;
+	
+}
+
+.picbox img
+{
+	
+	width:100%;
+	margin: 200px auto 0;
+
+}
+.picbox h1
+{
+	font-size: 500%;
+	text-decoration: underline;
+	text-decoration-color:#C3D902;
+	text-decoration-style:double;
+}
+
+.picbox p
+{
+	font-size: 130%;
+}
+
+.line
+{
+	width: 80%;
+	height: 10px;
+	margin: auto;
+	background-color: #C3D902;
+	border-radius: 10px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+.smallbox
+{
+	top: 0;
+	position: relative;
+	display: inline-block;
+	width:30%;
+}
+.textbox
+{
+	float: left;
+	width: 60%;
+	height: 100%;
+	margin: auto;
+	
+}
+
+.skill
+{
+	width: 100%;
+	height: 20%;	
+}
+
+.main
+{
+	width: 80%;
+	margin: auto;
+}
+
+.experience
+{
+	width: 100%;
+	height: 30%;
+}
+
+.award
+{
+	width: 100%;
+	height: 20%;
+}
+
+.contact_text
+{
+	position: relative;
+	height: 10%;
+	widows: 100%;
+	text-align: center;
+	animation: ani_contact_text 0.5s;
+	animation-direction:alternate-reverse;
+	animation-iteration-count: infinite;
+	
+}
+
+@keyframes ani_contact_text
+{
+	0%
+	{
+	  transform: translateY(0px);
+	}
+	100%
+	{
+	  transform: translateY(20px);
+	}
+}
+
+.contact_text h5
+{
+	text-decoration-color:  #C3D902;
+	text-decoration-line:underline;
+	text-decoration-style: double;
+}
+
+i {
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/*contactinfo*/
+
+.contactinfo
+{
+	overflow: hidden;
+	position: relative;
+	width:100%;
+	height:100px;
+	background-color: #C3D902;
+	
+}
+
+.contact
+{
+	position: absolute;
+	width: 100%;
+	margin: 2% auto;
+	text-align: center;
+}
+.button
+{
+	display:inline-block;
+    margin: auto;
+    height: 100%;
+	width: 5%;
+}
+
+.fa {
+	box-sizing: border-box;
+  padding: 10px;
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+ 
+transform: scale(1.8);
+  color: white;
+}
+
+.fa-rss {
+ transform: scale(1.8);
+  color: white;
+}

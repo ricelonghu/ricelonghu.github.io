@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+.mainwrapper
+{
+	position: relative;
+	text-align: center;
+	width: 100%;
+
+}
+
+.artboard
+{
+	position: absolute;
+	width:70%;
+	height: 90%;
+	left:50%;
+	transform: translate(-50%,0%);
+	background-color: yellowgreen;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.wrapper
+{
+	float: right;
+	margin-right: -200px;
+}
+
+.canvas
+{
+	width:420px;
+	height: 594px;
+	margin: 10% auto;
+	background-color:brown;
+}
+
+.artboard img
+{
+	width: 100%;
+}
+
+.bg
+{
+	position: absolute;
+	z-index: 2;
+}
+
+.bg img
+{
+	opacity: 1;
+	
+}
